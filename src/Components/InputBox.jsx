@@ -28,7 +28,21 @@ function Inputbox({
             </div>
             <div className='w-1/2 flex flex-wrap justify-end text-right'>
                 <p className='w-full text-black mb-3'>Currency Type</p>
-                <section
+
+
+                          <select
+  value={selectCurrency}
+  onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
+  disabled={currencyDisable}
+  className='cursor-pointer px-1 py-1 rounded-lg outline-none'
+>
+  {
+    currencyOption.map((currency) => (
+      <option key={currency} value={currency}>{currency}</option>
+    ))
+  }
+</select>
+{/*                 <section
                     value={selectCurrency}
                     onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
                     disabled={currencyDisable}
@@ -40,6 +54,7 @@ function Inputbox({
                     }
 
                 </section>
+                 */}
 
             </div>
         </div>
