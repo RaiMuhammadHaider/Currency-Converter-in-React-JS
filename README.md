@@ -17,10 +17,4 @@ A simple and stylish React-based currency converter that fetches real-time excha
 - JavaScript (ES6)
 - Currency API (open-source JSON-based)
 
-## 🔧 Installation
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-npm install
-npm run dev
