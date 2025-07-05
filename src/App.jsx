@@ -3,7 +3,8 @@ import { useState } from 'react'
 import InputBox from './Components/InputBox'
 // import UseCurrencyInfo from './CurrencyInfo'
 // import useCurrencyInfo from './currencyInfo'
-import useCurrencyInfo from './CurrencyInfo'
+
+import useCurrencyInfo from "./currencyInfo";
 import './App.css'
 
 function App() {
